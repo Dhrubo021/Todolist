@@ -1,0 +1,50 @@
+.note-card {
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 2px solid #007BFF;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .note-card h2 {
+    text-align: center;
+    color: #007BFF;
+  }
+  
+  .note-card input {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 2px solid #007BFF;
+    border-radius: 5px;
+  }
+  
+  .note-card button {
+    padding: 10px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ff9800;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .note-card button:hover {
+    background-color: #e65100;
+  }
+  
+  .notes-container {
+    margin-top: 10px;
+  }
+  
+  .note {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 5px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  }
+  

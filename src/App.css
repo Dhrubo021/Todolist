@@ -1,0 +1,89 @@
+body {
+  font-family: Arial, sans-serif;
+  background-image: url('tea.jpg');
+  /* background-position: center; */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #8fbeee;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  min-height: 100vh; /* Ensures full viewport height */
+  position: relative; /* Ensures proper stacking context */
+}
+
+header {
+  background-color: #343a40;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  margin-bottom: 0; /* Remove bottom margin */
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.parallax {
+  background-image: url('tea.jpg');
+  height: 80px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 20px 0;
+}
+
+.content {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px; /* Adds gap between sections */
+}
+
+.todo-section,
+.notes-section {
+  flex: 1;
+  max-width: 400px;
+}
+
+button {
+  font-size: 14px;
+  padding: 10px 15px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+  background-color: #8dbff5;
+  transform: scale(1.05);
+}
+
+header, .todo-list, .note-card {
+  animation: fadeIn 2s;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+footer {
+  background-color: #37485a;
+  color: white;
+  padding: 10px 0;
+  text-align: center;
+  position: fixed; /* Fixed positioning */
+  bottom: 0; /* Position at the bottom */
+  width: 100%; /* Full width of the viewport */
+}
